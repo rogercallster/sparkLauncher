@@ -1,0 +1,3 @@
+com/spark/example/WordCount.class
+com/spark/example/WordCountMain.class
+com/spark/example/SparkLauncherWordCount.class
