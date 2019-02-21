@@ -18,7 +18,7 @@ public class SparkLauncherWordCount {
                     )
                     .setAppResource("/Users/ansaran/dev/spark_examples/target/spark-examples-1.0-SNAPSHOT.jar")
                     .setMainClass("com.spark.example.WordCountMain")
-                    .setMaster("spark://ansaran-a01.vmware.com:7077")
+                    .setMaster("spark://spark-master:7077")
                     .setDeployMode("client")
                     .setSparkHome("/usr/local/spark")
                     .addSparkArg("--verbose")

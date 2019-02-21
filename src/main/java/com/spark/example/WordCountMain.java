@@ -16,7 +16,7 @@ public final class WordCountMain {
                 .setMaster("local[*]")
                 .setAppName("Word Count");
         final SparkContext sc = new SparkContext(conf);
-        final String file = "/Users/ansaran/dev/spark_examples/textfile.txt";
+        final String file = "textfile.txt";
 
         final JavaRDD<String> lines = sc.textFile(file, 1).toJavaRDD();
 //        lines.foreach(s -> System.out.println(s));
@@ -26,7 +26,7 @@ public final class WordCountMain {
 //        counts.foreach(s -> System.out.println(s));
         logger.warn("\n\nlogging test by ankur  >>>>>> <<<<<<< hello  \n\n");
 //        logger.warn(counts.collectAsMap());
-        counts.saveAsTextFile("/Users/ansaran/dev/spark_examples/results.txt");
+        counts.saveAsTextFile("results");
         sc.stop();
     }
 }
